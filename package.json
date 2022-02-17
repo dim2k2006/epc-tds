@@ -1,11 +1,12 @@
 {
   "name": "epc-tds",
   "version": "0.9.7",
-  "main": "index.js",
+  "main": "dist/index.js",
   "directories": {
     "doc": "doc"
   },
   "scripts": {
+    "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -28,5 +29,8 @@
   "bugs": {
     "url": "https://github.com/sergiss/epc-tds/issues"
   },
-  "homepage": "https://github.com/sergiss/epc-tds#readme"
+  "homepage": "https://github.com/sergiss/epc-tds#readme",
+  "devDependencies": {
+    "typescript": "^4.5.5"
+  }
 }

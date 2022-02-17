@@ -4,7 +4,7 @@
 */
 
 'use strict'
-var tds = require("./index.js");
+var tds = require("./src");
 
 const ITERATIONS = 10000;
 
@@ -138,7 +138,7 @@ function sgtin96Test(n) {
         epc = new tds.Sgtin96(epc.toHexString());
         if(gtin !== epc.getGtin()) {
             throw Error(`Sgtin96, expected GTIN: ${gtin}, current: ${epc.getGtin()}`);
-        }       
+        }
     }
     //console.log(epc.toHexString())
     //console.log(epc.getGtin());
@@ -154,7 +154,7 @@ function sgtin198Test(n) {
         epc = new tds.Sgtin198(epc.toHexString());
         if(gtin !== epc.getGtin()) {
             throw Error(`Sgtin198, expected GTIN: ${gtin}, current: ${epc.getGtin()}`);
-        }       
+        }
     }
     //console.log(epc.toHexString())
     //console.log(epc.getGtin());
@@ -197,7 +197,7 @@ console.log("Test Sgln195 time: " + time);
 function gid96Test(n) {
     let epc;
     for(let i = 0; i < n; ++i) {
-       
+
         let manager = Math.floor(Math.random() * tds.Gid96.MAX_MANAGER);
         let clazz   = Math.floor(Math.random() * tds.Gid96.MAX_CLASS);
         let serial  = Math.floor(Math.random() * tds.Gid96.MAX_SERIAL);

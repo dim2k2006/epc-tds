@@ -6,10 +6,10 @@
 
 "use strict";
 
-var tds = require("./index.js");
+var tds = require("./index");
 
 // ---------------------------------
-// ****** Decode from hex EPC ****** 
+// ****** Decode from hex EPC ******
 // ---------------------------------
 // e.g. 1: SGTIN-96
 let epc = tds.valueOf("3074257BF7194E4000001A85"); // sgtin-96
