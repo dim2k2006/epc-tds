@@ -1,5 +1,5 @@
 {
-  "name": "epc-tds",
+  "name": "epc-tds-ts",
   "version": "0.9.7",
   "main": "dist/index.js",
   "directories": {
